@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ae739b4-bacb-49f7-a267-b36b2fc99a09" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/slim-apache.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/supervisord/supervisord.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
@@ -53,11 +50,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="26" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="26" />
+            <state relative-caret-position="75">
+              <caret line="5" column="57" lean-forward="true" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -80,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="supervisord.conf" pinned="false" current-in-tab="true">
+      <file leaf-file-name="supervisord.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/supervisord/supervisord.conf">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -107,8 +104,8 @@
         <option value="$PROJECT_DIR$/app/.htaccess" />
         <option value="$PROJECT_DIR$/app/slim-apache.conf" />
         <option value="$PROJECT_DIR$/app/user/user.conf" />
-        <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/app/supervisord/supervisord.conf" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
       </list>
     </option>
   </component>
@@ -176,6 +173,12 @@
               <item name="pingGame" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="pingGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pingGame" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -215,7 +218,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512949741367</updated>
-      <workItem from="1523395990390" duration="3638000" />
+      <workItem from="1523395990390" duration="4727000" />
     </task>
     <task id="LOCAL-00001" summary="refresh code">
       <created>1523400847576</created>
@@ -231,11 +234,46 @@
       <option name="project" value="LOCAL" />
       <updated>1523400998230</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add docker file">
+      <created>1523401599590</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1523401599590</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add php7">
+      <created>1523402258191</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1523402258191</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update php7 to 7.0">
+      <created>1523402531635</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1523402531635</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update php7 to 7.0">
+      <created>1523402849308</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1523402849308</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add git">
+      <created>1523403026073</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1523403026073</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3638000" />
+    <option name="totallyTimeSpent" value="4727000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1271" height="737" extended-state="0" />
@@ -272,7 +310,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refresh code" />
     <MESSAGE value="update script bash" />
-    <option name="LAST_COMMIT_MESSAGE" value="update script bash" />
+    <MESSAGE value="add docker file" />
+    <MESSAGE value="add php7" />
+    <MESSAGE value="update php7 to 7.0" />
+    <MESSAGE value="add git" />
+    <option name="LAST_COMMIT_MESSAGE" value="add git" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
@@ -327,13 +369,6 @@
     <entry file="file://$PROJECT_DIR$/prog.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -352,6 +387,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="57" lean-forward="true" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
         </state>
       </provider>
     </entry>
