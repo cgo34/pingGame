@@ -11,9 +11,9 @@ RUN rm -rf /var/www/html/index.html
 
 RUN a2enmod rewrite
 
-ADD slim/.htaccess /var/www/html/.htaccess
-ADD slim/index.php /var/www/html/index.php
-ADD slim/slim-apache.conf /etc/apache2/sites-available/000-default.conf
+ADD app/.htaccess /var/www/html/.htaccess
+ADD app/public/index.php /var/www/html/index.php
+ADD app/slim-apache.conf /etc/apache2/sites-available/000-default.conf
 
 ADD supervisord/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
