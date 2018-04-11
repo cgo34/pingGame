@@ -10,9 +10,6 @@ $error_handler->registerExceptionHandler();
 $error_handler->registerErrorHandler();
 $error_handler->registerShutdownFunction();
 
-session_start();
-
-
 
 // Register compteur
 require '../class/compteur.php';
@@ -22,20 +19,14 @@ require '../class/count.php';
 $settings = require __DIR__ . '/../src/settings.php';
 $app = new \Slim\App($settings);
 
-
 $app->compteur = new compteur();
-//$app->count = new count();
-$app->mytest = $_SESSION['mytest'] = 0;
 
 // Set up dependencies
 require __DIR__ . '/../src/dependencies.php';
-
 // Register middleware
 require __DIR__ . '/../src/middleware.php';
-
 // Register routes
 require __DIR__ . '/../src/routes.php';
-
 
 // Run app
 $app->run();

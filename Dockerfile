@@ -19,3 +19,4 @@ ADD supervisord/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 EXPOSE 80
 CMD ["/usr/bin/supervisord"]
+CMD php -S localhost:8080
