@@ -1,7 +1,16 @@
-pinggame:
+services:
+  - docker:dind
+
+stages:
+  - build
+  - deploy
+  - test
+
+build_app:
+  stage: build
   image: ubuntu:16.04
   before_script:
-    - apt-get update
+    - apt-get update && install -y
     - apt-get install apache2
     - apt-get install php5 libapache2-mod-php5 php5-mcrypt
     - a2enmod rewrite
