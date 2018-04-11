@@ -1,18 +1,10 @@
-services:
-  - docker:dind
-
-stages:
-  - build
-  - deploy
-  - test
-
-build_app:
-  stage: build
-  image: ubuntu:16.04
+dockerize:
+  stage: deploy
+  image: gitlab/dind
+  variables:
+    IMAGE: $CI_REGISTRY_IMAGE/app:$CI_COMMIT_REF_NAME
   before_script:
-    - apt-get update && install -y
-    - apt-get install apache2
-    - apt-get install php5 libapache2-mod-php5 php5-mcrypt
-    - a2enmod rewrite
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
   script:
-    - php -S localhost:8080
+    - docker build -t $IMAGE .
+    - docker push $IMAGE
